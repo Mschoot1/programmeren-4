@@ -2,9 +2,9 @@
   "name": "untitled",
   "version": "1.0.0",
   "description": "description",
-  "main": "index.js",
+  "main": "./MyRandomUser/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./MyRandomUser/index.js"
   },
   "author": "Marnix",
   "license": "ISC",
