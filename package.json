@@ -2,9 +2,9 @@
   "name": "untitled",
   "version": "1.0.0",
   "description": "description",
-  "main": "./MyRandomUser/index.js",
+  "main": "./index.js",
   "scripts": {
-    "start": "node ./MyRandomUser/index.js"
+    "start": "node ./index.js"
   },
   "author": "Marnix",
   "license": "ISC",
