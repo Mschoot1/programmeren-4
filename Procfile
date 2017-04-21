@@ -1,0 +1,1 @@
+web: node ./MyRandomUser/index.js"
