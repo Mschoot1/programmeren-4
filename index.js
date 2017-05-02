@@ -249,7 +249,7 @@ app.get('/api', function(request, response) {
         i = Math.floor((Math.random() * persons.length));
     }
 
-    i = last;
+    last = i;
 
     var person = persons[i];
 
