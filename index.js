@@ -240,7 +240,7 @@ app.get('/api', function(request, response) {
             "nat": "IR"
     }];
 
-    var i = Math.floor((Math.random() * persons.length) + 1);
+    var i = Math.floor((Math.random() * persons.length));
 
     var person = persons[i];
 
