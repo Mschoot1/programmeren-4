@@ -83,7 +83,7 @@ app.get('/api', function(request, response) {
         },
         "nat": "DK"
 
-    },
+        },
         {
 
             "gender": "male",
@@ -238,14 +238,12 @@ app.get('/api', function(request, response) {
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/women/90.jpg"
             },
             "nat": "IR"
-    }]
+    }];
 
 
     var i = Math.floor((Math.random() * persons.length) + 1);
 
-
-
-    response.json(persons.get(i));
+    response.json(persons[i]);
 });
 
 app.get('*', function(request, response) {
