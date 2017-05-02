@@ -243,9 +243,9 @@ app.get('/api', function(request, response) {
 
     };
 
-    var result = results.getJSONArray("results").get(1)
+    var result = json.results.getJSONArray("results").get(1)
 
-    response.json(result);
+    response(result);
 });
 
 app.get('*', function(request, response) {
