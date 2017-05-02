@@ -243,10 +243,9 @@ app.get('/api', function(request, response) {
 
     };
 
-    var i = Math.floor((Math.random() * results.getJSONArray("results").length) + 1);
-
-    results.getJSONArray("results").get(i);
-
+    // var i = Math.floor((Math.random() * results.getJSONArray("results").length) + 1);
+    //
+    // results.getJSONArray("results").get(i);
 
     response.json(results);
 });
