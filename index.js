@@ -6,7 +6,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
-var last;
+var last = 0;
 
 app.get('/', function(request, response) {
     response.send('Hello Avans!');
@@ -242,7 +242,7 @@ app.get('/api', function(request, response) {
             "nat": "IR"
     }];
 
-    var i = Math.floor((Math.random() * persons.length));
+    var i = 0;
 
     while(i === last) {
 
