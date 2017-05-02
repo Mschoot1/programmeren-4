@@ -45,207 +45,207 @@ app.get('/json', function(request, response) {
 
 app.get('/api', function(request, response) {
 
-    var results = {
+    var persons = [{
 
-        "results": [
-            {
-                "gender": "female",
-                "name": {
-                    "title": "mrs",
-                    "first": "elise",
-                    "last": "morin"
-                },
-                "location": {
-                    "street": "7973 esplanade du 9 novembre 1989",
-                    "city": "rueil-malmaison",
-                    "state": "eure-et-loir",
-                    "postcode": 49636
-                },
-                "email": "elise.morin@example.com",
-                "login": {
-                    "username": "smallleopard780",
-                    "password": "asasas",
-                    "salt": "pobR6CqJ",
-                    "md5": "786d0a06e82ca2c7e584b6bd59a749a0",
-                    "sha1": "85284aac4361e24acfcc7b8a99f55d5df00253e2",
-                    "sha256": "c2d9e794d3d32c83f72ef18072715a938e48fb737fefde0bdbe57fedf465bab7"
-                },
-                "dob": "1979-05-17 00:50:54",
-                "registered": "2009-05-11 09:09:01",
-                "phone": "05-08-42-68-45",
-                "cell": "06-75-99-53-17",
-                "id": {
-                    "name": "INSEE",
-                    "value": "279494452022 11"
-                },
-                "picture": {
-                    "large": "https://randomuser.me/api/portraits/women/94.jpg",
-                    "medium": "https://randomuser.me/api/portraits/med/women/94.jpg",
-                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/94.jpg"
-                },
-                "nat": "FR"
-            },
-            {
-                "gender": "male",
-                "name": {
-                    "title": "mr",
-                    "first": "پوریا",
-                    "last": "کوتی"
-                },
-                "location": {
-                    "street": "3589 شهید صابونچی",
-                    "city": "ملارد",
-                    "state": "قزوین",
-                    "postcode": 17278
-                },
-                "email": "پوریا.کوتی@example.com",
-                "login": {
-                    "username": "tinylion838",
-                    "password": "atlantis",
-                    "salt": "xP8bMJF8",
-                    "md5": "50f5d84ccd24b88ac329fbad57a719cb",
-                    "sha1": "05f10a4072c1e03e415e07cd46469e6317baad07",
-                    "sha256": "95734d615eac3d8c5dbb239af96c76227b712e8cafa8802c23244cb483b5d437"
-                },
-                "dob": "1988-07-02 10:24:04",
-                "registered": "2008-11-09 11:08:22",
-                "phone": "098-08443585",
-                "cell": "0975-964-6444",
-                "id": {
-                    "name": "",
-                    "value": null
-                },
-                "picture": {
-                    "large": "https://randomuser.me/api/portraits/men/20.jpg",
-                    "medium": "https://randomuser.me/api/portraits/med/men/20.jpg",
-                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/20.jpg"
-                },
-                "nat": "IR"
-            },
-            {
-                "gender": "male",
-                "name": {
-                    "title": "mr",
-                    "first": "élsio",
-                    "last": "duarte"
-                },
-                "location": {
-                    "street": "1506 rua josé bonifácio ",
-                    "city": "taboão da serra",
-                    "state": "alagoas",
-                    "postcode": 31924
-                },
-                "email": "élsio.duarte@example.com",
-                "login": {
-                    "username": "brownbutterfly890",
-                    "password": "2222222",
-                    "salt": "eyKoaRmx",
-                    "md5": "8123c2a0ef49eb30d980238b35698bd5",
-                    "sha1": "dcafe5a03debbc97d2fb9c35d459c8625c0ec4ec",
-                    "sha256": "9e4d20634d1fa163a96883073c4e7893286dfe47fe03a1e31270e856513e291f"
-                },
-                "dob": "1962-10-19 14:05:43",
-                "registered": "2004-10-01 13:17:50",
-                "phone": "(55) 5617-3588",
-                "cell": "(87) 6227-4539",
-                "id": {
-                    "name": "",
-                    "value": null
-                },
-                "picture": {
-                    "large": "https://randomuser.me/api/portraits/men/65.jpg",
-                    "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
-                },
-                "nat": "BR"
-            },
-            {
-                "gender": "male",
-                "name": {
-                    "title": "mr",
-                    "first": "aiden",
-                    "last": "ryan"
-                },
-                "location": {
-                    "street": "2195 homestead rd",
-                    "city": "bowral",
-                    "state": "victoria",
-                    "postcode": 8137
-                },
-                "email": "aiden.ryan@example.com",
-                "login": {
-                    "username": "bluebird657",
-                    "password": "gary",
-                    "salt": "RZ20A2fA",
-                    "md5": "8a2792e28464815fc497167cf8986d97",
-                    "sha1": "46b79beb6cabee5abeed495d9f2ceed9fcf10366",
-                    "sha256": "95b8584ac2690ae5e4cc0d9029076c1909fdba1ac5e5a4f50176626008365856"
-                },
-                "dob": "1960-12-26 03:13:05",
-                "registered": "2010-10-05 12:54:33",
-                "phone": "01-7506-7172",
-                "cell": "0407-062-227",
-                "id": {
-                    "name": "TFN",
-                    "value": "627295835"
-                },
-                "picture": {
-                    "large": "https://randomuser.me/api/portraits/men/58.jpg",
-                    "medium": "https://randomuser.me/api/portraits/med/men/58.jpg",
-                    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/58.jpg"
-                },
-                "nat": "AU"
-            },
-            {
-                "gender": "female",
-                "name": {
-                    "title": "ms",
-                    "first": "eliza",
-                    "last": "wagner"
-                },
-                "location": {
-                    "street": "4970 victoria street",
-                    "city": "salford",
-                    "state": "cambridgeshire",
-                    "postcode": "Y5A 8ST"
-                },
-                "email": "eliza.wagner@example.com",
-                "login": {
-                    "username": "lazypeacock138",
-                    "password": "daniela",
-                    "salt": "wwgjcMmg",
-                    "md5": "eeb10ff91bbaa4e850b77ff1d04bdd32",
-                    "sha1": "a7e14e38cbbbaed3fc5e930fb822d9f1dedc21ff",
-                    "sha256": "3fd545275bb56c0dbabf3d30ee77db47a6ae338f91c527c856702e5d9d0daecd"
-                },
-                "dob": "1989-07-31 14:28:58",
-                "registered": "2002-09-30 14:19:12",
-                "phone": "015242 95896",
-                "cell": "0721-088-900",
-                "id": {
-                    "name": "NINO",
-                    "value": "JK 89 60 14 W"
-                },
-                "picture": {
-                    "large": "https://randomuser.me/api/portraits/women/95.jpg",
-                    "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
-                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
-                },
-                "nat": "GB"
-            }
-        ],
-        "info": {
-            "seed": "9abb35d49104a745",
-            "results": 5,
-            "page": 1,
-            "version": "1.1"
-        }
+        "gender": "female",
+        "name": {
+            "title": "mrs",
+            "first": "katrine",
+            "last": "christensen"
+        },
+        "location": {
+            "street": "3656 kildemarken",
+            "city": "lemvig",
+            "state": "midtjylland",
+            "postcode": 80244
+        },
+        "email": "katrine.christensen@example.com",
+        "login": {
+            "username": "beautifulmeercat305",
+            "password": "321321",
+            "salt": "uuDTyt9Q",
+            "md5": "4bb33b8bd2be42ae894bd96fe57ac736",
+            "sha1": "3b7b32f6daf480d2358601146737425b9123a8b9",
+            "sha256": "77767d8b79b410005d7c0d452bf7fd046886e11d7fefd7095eb3dec442b8e82d"
+        },
+        "dob": "1946-10-20 10:17:02",
+        "registered": "2014-09-06 02:23:50",
+        "phone": "67194934",
+        "cell": "30746632",
+        "id": {
+            "name": "CPR",
+            "value": "390384-8426"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/50.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/50.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/50.jpg"
+        },
+        "nat": "DK"
 
-    };
+    },
+        {
 
-    var result = json.results.getJSONArray("results").get(1)
+            "gender": "male",
+            "name": {
+                "title": "mr",
+                "first": "eugene",
+                "last": "taylor"
+            },
+            "location": {
+                "street": "3513 northaven rd",
+                "city": "sunshine coast",
+                "state": "victoria",
+                "postcode": 7616
+            },
+            "email": "eugene.taylor@example.com",
+            "login": {
+                "username": "smallrabbit589",
+                "password": "kitty",
+                "salt": "97uWhxLG",
+                "md5": "680d6a86a29c23eaf258cc983ee3126d",
+                "sha1": "16a56f6a84ad75e2598eff8c2df03f893b5f81e4",
+                "sha256": "b26e04ca2f539d11309732ae3fd236f391bcc15871819da8049f11dea83b60a0"
+            },
+            "dob": "1972-03-01 06:15:48",
+            "registered": "2003-02-19 07:15:45",
+            "phone": "09-5645-9572",
+            "cell": "0492-091-446",
+            "id": {
+                "name": "TFN",
+                "value": "680832077"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/73.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/73.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/73.jpg"
+            },
+            "nat": "AU"
 
-    response(result);
+        },
+        {
+
+            "gender": "female",
+            "name": {
+                "title": "mademoiselle",
+                "first": "elisa",
+                "last": "picard"
+            },
+            "location": {
+                "street": "3307 rue des jardins",
+                "city": "vullierens",
+                "state": "appenzell ausserrhoden",
+                "postcode": 4242
+            },
+            "email": "elisa.picard@example.com",
+            "login": {
+                "username": "orangebird873",
+                "password": "tabatha",
+                "salt": "cn6hvB2i",
+                "md5": "25a135ba85403185f6fd4e46f8920d35",
+                "sha1": "79c1fc8db5d2e7ad6b53ce1aa1353b333d711f8e",
+                "sha256": "274351f08177846327a825e0c336a77b2e253adff2dc435c377dd080223bad6d"
+            },
+            "dob": "1963-12-06 21:29:34",
+            "registered": "2014-01-01 08:43:05",
+            "phone": "(815)-902-0136",
+            "cell": "(911)-669-8404",
+            "id": {
+                "name": "AVS",
+                "value": "756.LUDZ.SEKF.39"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/69.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/69.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/69.jpg"
+            },
+            "nat": "CH"
+
+        },
+        {
+
+            "gender": "female",
+            "name": {
+                "title": "ms",
+                "first": "johanna",
+                "last": "pohl"
+            },
+            "location": {
+                "street": "5362 neue straße",
+                "city": "lörrach",
+                "state": "sachsen-anhalt",
+                "postcode": 58809
+            },
+            "email": "johanna.pohl@example.com",
+            "login": {
+                "username": "smallsnake732",
+                "password": "nympho",
+                "salt": "ot0dXPiG",
+                "md5": "de8d9143ebbdfbcb6bdbee7231993e56",
+                "sha1": "c6f78face77060e26a0e6bccbad591ebac5af282",
+                "sha256": "a0f850289827863c1def9217c942fb5ba0ce6e2fe635ddbb8eda8d429153d8ed"
+            },
+            "dob": "1983-12-28 08:35:40",
+            "registered": "2008-04-23 21:41:20",
+            "phone": "0307-8558768",
+            "cell": "0175-9653730",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/42.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/42.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/42.jpg"
+            },
+            "nat": "DE"
+
+        },
+        {
+
+            "gender": "female",
+            "name": {
+                "title": "mrs",
+                "first": "درسا",
+                "last": "قاسمی"
+            },
+            "location": {
+                "street": "1531 آیت الله طالقانی",
+                "city": "ساری",
+                "state": "مازندران",
+                "postcode": 60153
+            },
+            "email": "درسا.قاسمی@example.com",
+            "login": {
+                "username": "lazyladybug198",
+                "password": "ashley1",
+                "salt": "I85omvZo",
+                "md5": "c0b691fd5165663a43914c82dbc7913f",
+                "sha1": "7d84c051298b0a8fcf702cae36866b0d51f74169",
+                "sha256": "2258736f1cedc629ba6e88206f9e424f26ae587e536a3e9b67a68fff15237873"
+            },
+            "dob": "1964-02-14 14:31:22",
+            "registered": "2016-01-24 22:14:45",
+            "phone": "068-79034658",
+            "cell": "0999-086-6084",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/90.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/90.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/90.jpg"
+            },
+            "nat": "IR"
+    }]
+
+
+    var i = Math.floor((Math.random() * persons.length) + 1);
+
+
+
+    response.json(persons.get(i));
 });
 
 app.get('*', function(request, response) {
