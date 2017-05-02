@@ -242,9 +242,9 @@ app.get('/api', function(request, response) {
             "nat": "IR"
     }];
 
-    var i;
+    var i = Math.floor((Math.random() * persons.length));
 
-    while(i != last) {
+    while(i === last) {
 
         i = Math.floor((Math.random() * persons.length));
     }
